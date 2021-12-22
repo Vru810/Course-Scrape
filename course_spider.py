@@ -13,12 +13,3 @@ class CourseSpider(scrapy.Spider):
         'contact hours' : card.css('p.hours::text')[0].get()
       }
 
-
-# For contact hours: response.css('div.card-body p.hours::text').get()
-
-#for title of text: response.css('div.card-body h4::text').get()
-
-# for cost: response.css('div.card-body p.text-success.fw-900::text').get()
-
-# for description: response.css('div.card-body p::text').get()
-
